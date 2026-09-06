@@ -1,8 +1,9 @@
-function isEven(num) {
-  if (typeof num !== "number" || isNaN(num)) {
-    throw new TypeError("isEven expects a valid number");
-  }
-  return num % 2 === 0;
+function isEven(num){
+    if(num%2==0){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
-
-module.exports = isEven;
+module.exports=isEven;
