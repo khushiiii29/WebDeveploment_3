@@ -1,8 +1,6 @@
 const crypto = require('crypto');
-const numberOfRolls = 5;
 
-for (let rollNumber = 1; rollNumber <= numberOfRolls; rollNumber += 1) {
-  const randomByte = crypto.randomBytes(1)[0];
-  const diceValue = (randomByte % 6) + 1;
-  console.log(`Dice Rolled: ${diceValue}`);
+for (let i = 0; i < 5; i++) {
+    const dice  = crypto.randomInt(1, 7);
+    console.log(dice);
 }
